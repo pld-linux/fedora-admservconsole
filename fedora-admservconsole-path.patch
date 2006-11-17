@@ -1,0 +1,21 @@
+--- fedora-admservconsole-1.0.3/build.xml.orig	2006-03-24 01:52:51.000000000 +0100
++++ fedora-admservconsole-1.0.3/build.xml	2006-11-17 13:13:17.329505000 +0100
+@@ -81,13 +81,11 @@
+   <target name="build" depends="import_console">
+     <!-- Construct classpath -->
+     <path id="admservconsole.classpath">
+-      <fileset dir="${console.location}">
+-        <include name="**/java/${brand}-base-*.jar"/>
+-        <include name="**/java/${brand}-mcc-*.jar"/>
+-        <include name="**/java/${brand}-nmclf-*.jar"/>
+-        <include name="**/java/ldapjdk.jar"/> 
+-      </fileset>
+-      <pathelement path="${built.classdir}"/>
++	<pathelement location="${console.location}/${brand}-base-${admservconsole.gen.version}.jar"/>
++	<pathelement location="${console.location}/${brand}-mcc-${admservconsole.gen.version}.jar"/>
++	<pathelement location="${console.location}/${brand}-nmclf-${admservconsole.gen.version}.jar"/>
++	<pathelement location="${ldapjdk.location}/ldapjdk.jar"/> 
++        <pathelement path="${built.classdir}"/>
+     </path>
+     <!-- compile regular java code -->
+     <javac   srcdir="${java.src.dir}"
