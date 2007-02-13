@@ -1,6 +1,6 @@
 # http://directory.fedora.redhat.com/wiki/BuildingConsole#Building_Fedora_Admin_Server_Console
 Summary:	Fedora Admin Server Java Remote Management Console
-Summary(pl.UTF-8):   Konsola w Javie do zdalnego zarządzania serwerem Fedora Admin Server
+Summary(pl.UTF-8):	Konsola w Javie do zdalnego zarządzania serwerem Fedora Admin Server
 Name:		fedora-admservconsole
 # don't update to 1.1 (unless it's really 1.1; sources from 20060620 are really 1.0.2)
 Version:	1.0.3
