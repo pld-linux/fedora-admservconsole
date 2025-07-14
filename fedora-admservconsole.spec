@@ -29,7 +29,7 @@ Konsola w Javie do zdalnego zarządzania serwerem Fedora Admin Server.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %ant \
